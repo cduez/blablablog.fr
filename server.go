@@ -10,7 +10,7 @@ import (
 )
 
 func Index(c echo.Context) error {
-	return c.Render(http.StatusOK, "index", "")
+	return c.Render(http.StatusOK, "base", "")
 }
 
 type Template struct {
@@ -18,11 +18,12 @@ type Template struct {
 }
 
 func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
-	return t.templates.ExecuteTemplate(w, name + ".html", data)
+	return t.templates.ExecuteTemplate(w, name + ".tmpl", data)
 }
 
 func main() {
 	e := echo.New()
+	e.ShutdownTimeout = 3
 
 	e.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
 		Format: "[${time_rfc3339}] ${method} ${uri} -> ${status} in ${latency_human}\n",
@@ -30,7 +31,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	t := &Template{
-		templates: template.Must(template.ParseGlob("./public/*.html")),
+		templates: template.Must(template.ParseGlob("./public/*.tmpl")),
 	}
 
 	e.Static("/", "assets")

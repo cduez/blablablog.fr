@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog de Laure et Cyril</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto:400,700" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="blogLogo" src="/images/logo.png"></img>
+        <h1 class="blogTitle">Les aventures de Laure et Cyril autour du monde</h1>
+      </header>
+
+      <main>
+        {{ template "content" }}
+      </main>
+
+      <footer>
+        <div class="hr">
+          <span class="plane">
+            &#9992;
+          </span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
