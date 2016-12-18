@@ -32,15 +32,24 @@ var translateMonth map[string]string = map[string]string {
 	"December": "Décembre",
 }
 
-
 type CustomRenderer struct {}
 
+func FormatDate(date time.Time) string {
+	return fmt.Sprintf("%d %s %d", date.Day(), translateMonth[date.Month().String()], date.Year())
+}
+
 func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
+	funcMap := template.FuncMap{
+		"format": FormatDate,
+	}
+
+	tmpl := template.New("base.tmpl").Funcs(funcMap)
+
 	if name == "post" {
-		tmplPost := template.Must(template.ParseFiles("public/base.tmpl", "public/post.tmpl"))
+		tmplPost := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/post.tmpl"))
 		return tmplPost.Execute(w, data)
 	} else {
-		tmplIndex := template.Must(template.ParseFiles("public/base.tmpl", "public/index.tmpl"))
+		tmplIndex := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/index.tmpl"))
 		return tmplIndex.Execute(w, data)
 	}
 }
@@ -50,15 +59,10 @@ func ParseDate(date string) time.Time {
 	return time
 }
 
-func FormatDate(date time.Time) string {
-	return fmt.Sprintf("%d %s %d", date.Day(), translateMonth[date.Month().String()], date.Year())
-}
-
 type Post struct {
 	Slug string
 	Title string
 	Date time.Time
-	DateStr string
 	Content template.HTML
 }
 type Posts []Post
@@ -91,10 +95,9 @@ func getPosts() []Post {
 		title := string(lines[0])
 		slug  := slugify.Slugify(title)
 		date := ParseDate(string(lines[1]))
-		dateStr := FormatDate(date)
 		content := strings.Join(lines[3:len(lines)], "\n")
 		htmlContent := template.HTML(string(blackfriday.MarkdownCommon([]byte(content))))
-		posts = append(posts, Post{slug, title, date, dateStr, htmlContent})
+		posts = append(posts, Post{slug, title, date, htmlContent})
 	}
 
 	sort.Sort(posts)

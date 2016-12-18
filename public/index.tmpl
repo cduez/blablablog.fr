@@ -9,7 +9,7 @@
     <h2 class="postTitle">
     <a href="/posts/{{.Slug}}">{{ .Title }}</a>
     </h2>
-    <time class="postTime">{{ .DateStr }}</time>
+    <time class="postTime">{{ format .Date }}</time>
   </article>
   {{ end }}
 {{ end }}

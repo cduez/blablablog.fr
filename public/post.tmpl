@@ -7,7 +7,7 @@
   <h2 class="postTitle">
   {{ .Title }}
   </h2>
-  <time class="postTime">{{ .DateStr }}</time>
+  <time class="postTime">{{ format .Date }}</time>
 
   {{ .Content }}
 </article>
