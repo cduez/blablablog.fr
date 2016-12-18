@@ -1,24 +1,114 @@
 package main
 
 import (
-	"io"
-	"net/http"
+	"fmt"
 	"html/template"
+	"io"
+	"io/ioutil"
+	"net/http"
+	"path/filepath"
+	"strings"
+	"sort"
+	"time"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/russross/blackfriday"
+	"github.com/Machiel/slugify"
 )
 
+var translateMonth map[string]string = map[string]string {
+	"January": "Janvier",
+	"February": "Février",
+	"March": "Mars",
+	"April": "Avril",
+	"May": "Mai",
+	"June": "Juin",
+	"July": "Juillet",
+	"August": "Août",
+	"September": "Septembre",
+	"October": "Octobre",
+	"November": "Novembre",
+	"December": "Décembre",
+}
+
+
+type CustomRenderer struct {}
+
+func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
+	if name == "post" {
+		tmplPost := template.Must(template.ParseFiles("public/base.tmpl", "public/post.tmpl"))
+		return tmplPost.Execute(w, data)
+	} else {
+		tmplIndex := template.Must(template.ParseFiles("public/base.tmpl", "public/index.tmpl"))
+		return tmplIndex.Execute(w, data)
+	}
+}
+
+func ParseDate(date string) time.Time {
+	time, _ := time.Parse("2-1-2006", date);
+	return time
+}
+
+func FormatDate(date time.Time) string {
+	return fmt.Sprintf("%d %s %d", date.Day(), translateMonth[date.Month().String()], date.Year())
+}
+
+type Post struct {
+	Slug string
+	Title string
+	Date time.Time
+	DateStr string
+	Content template.HTML
+}
+type Posts []Post
+
+func (p Posts) Len() int           { return len(p) }
+func (p Posts) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
+func (p Posts) Less(i, j int) bool { return (p[i].Date).After(p[j].Date) }
+
 func Index(c echo.Context) error {
-	return c.Render(http.StatusOK, "base", "")
+	posts := getPosts()
+	return c.Render(http.StatusOK, "index", posts)
 }
 
-type Template struct {
-	templates *template.Template
+func ViewPost(c echo.Context) error {
+	postName := c.Param("slug")
+	posts := getPosts()
+	post := findPostBySlug(posts, postName)
+
+	return c.Render(http.StatusOK, "post", post)
 }
 
-func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
-	return t.templates.ExecuteTemplate(w, name + ".tmpl", data)
+func getPosts() []Post {
+	posts := Posts{}
+
+	files, _ := filepath.Glob("./posts/*")
+	for _, file := range files {
+		data, _ := ioutil.ReadFile(file)
+
+		lines := strings.Split(string(data), "\n")
+		title := string(lines[0])
+		slug  := slugify.Slugify(title)
+		date := ParseDate(string(lines[1]))
+		dateStr := FormatDate(date)
+		content := strings.Join(lines[3:len(lines)], "\n")
+		htmlContent := template.HTML(string(blackfriday.MarkdownCommon([]byte(content))))
+		posts = append(posts, Post{slug, title, date, dateStr, htmlContent})
+	}
+
+	sort.Sort(posts)
+
+	return posts
+}
+
+func findPostBySlug(posts []Post, slug string) Post {
+	for _, post := range posts {
+		if slug == post.Slug {
+			return post
+		}
+	}
+	return Post{}
 }
 
 func main() {
@@ -30,14 +120,11 @@ func main() {
 	}))
 	e.Use(middleware.Recover())
 
-	t := &Template{
-		templates: template.Must(template.ParseGlob("./public/*.tmpl")),
-	}
-
 	e.Static("/", "assets")
-	e.Renderer = t
+	e.Renderer = &CustomRenderer{}
 
+	e.GET("/posts/:slug", ViewPost)
 	e.GET("/", Index)
 
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":1666"))
 }

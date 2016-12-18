@@ -17,17 +17,18 @@
      }
     </script>
 
+    <script src="/js/viewer.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/viewer.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
     <div class="container">
       <header>
-        <img class="blogLogo" src="/images/logo.png"></img>
-        <h1 class="blogTitle">Les aventures de Laure et Cyril autour du monde</h1>
+        {{ template "header" }}
       </header>
 
       <main>
-        {{ template "content" }}
+        {{ template "content" . }}
       </main>
 
       <footer>
@@ -38,5 +39,9 @@
         </div>
       </footer>
     </div>
+
+    {{ template "scripts" }}
   </body>
 </html>
+
+{{ define "scripts" }}{{ end }}

@@ -31,6 +31,10 @@ header {
   width: 300px;
 }
 
+.blogLogo--small {
+  width: 150px;
+}
+
 .postTitle {
   margin-bottom: 0;
 }
@@ -63,4 +67,12 @@ header {
   top: -15px;
   color: #7f8c8d;
   font-size: 1.5rem;
+}
+
+.image {
+  border-radius: 4px;
+}
+
+.image:hover {
+  cursor: pointer;
 }

@@ -1,0 +1,27 @@
+{{ define "header" }}
+  <a href="/" title="Retour à l'accueil"><img class="blogLogo blogLogo--small" src="/images/logo.png"></img></a>
+{{ end }}
+
+{{ define "content" }}
+<article>
+  <h2 class="postTitle">
+  {{ .Title }}
+  </h2>
+  <time class="postTime">{{ .DateStr }}</time>
+
+  {{ .Content }}
+</article>
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+var viewer = new Viewer(document.querySelector('article'), {
+  movable: false,
+  zoomable: false,
+  rotatable: false,
+  scalable: false,
+  transition: false
+
+});
+</script>
+{{ end }}

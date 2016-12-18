@@ -1,8 +1,15 @@
+{{ define "header" }}
+  <img class="blogLogo" src="/images/logo.png"></img>
+  <h1 class="blogTitle">Les aventures de Laure et Cyril autour du monde</h1>
+{{ end }}
+
 {{ define "content" }}
-<article>
-  <h2 class="postTitle">
-  <a href="./post.html">Titre de la news</a>
-  </h2>
-  <time class="postTime">12 Décembre 2016</time>
-</article>
+  {{ range . }}
+  <article>
+    <h2 class="postTitle">
+    <a href="/posts/{{.Slug}}">{{ .Title }}</a>
+    </h2>
+    <time class="postTime">{{ .DateStr }}</time>
+  </article>
+  {{ end }}
 {{ end }}
