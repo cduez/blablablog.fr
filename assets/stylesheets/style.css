@@ -9,6 +9,15 @@ html {
   background-color: #FCFCFC;
 }
 
+a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -37,15 +46,6 @@ header {
 
 .postTitle {
   margin-bottom: 0;
-}
-
-.postTitle a {
-  text-decoration: none;
-  color: #2980b9;
-}
-
-.postTitle a:hover {
-  text-decoration: underline;
 }
 
 .postTime {
