@@ -1,5 +1,5 @@
 {{ define "header" }}
-  <img class="blogLogo" src="/images/logo.png"></img>
+  <img class="blogLogo" src="/images/logo.png">
   <h1 class="blogTitle">Les aventures de Laure et Cyril autour du monde</h1>
 {{ end }}
 
@@ -7,9 +7,12 @@
   {{ range . }}
   <article>
     <h2 class="postTitle">
-    <a href="/posts/{{.Slug}}">{{ .Title }}</a>
+      <img src="/images/flags/{{ .Country }}.svg" class="flag">
+      <a href="/posts/{{.Slug}}">{{ .Title }}</a>
     </h2>
-    <time class="postTime">{{ format .Date }}</time>
+    <div>
+      <time class="postTime">{{ format .Date }}</time>
+    </div>
   </article>
   {{ end }}
 {{ end }}

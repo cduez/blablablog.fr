@@ -1,5 +1,6 @@
 Préparatifs
 14-12-2016
+fr
 
 <figure>
   <img src="/images/preparatifs/1.jpg" class="image" alt="pre1" style="width:200px"/>

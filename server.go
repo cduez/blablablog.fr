@@ -63,6 +63,7 @@ type Post struct {
 	Slug string
 	Title string
 	Date time.Time
+	Country string // ISO 3166
 	Content template.HTML
 }
 type Posts []Post
@@ -95,9 +96,10 @@ func getPosts() []Post {
 		title := string(lines[0])
 		slug  := slugify.Slugify(title)
 		date := ParseDate(string(lines[1]))
-		content := strings.Join(lines[3:len(lines)], "\n")
+		country := string(lines[2])
+		content := strings.Join(lines[4:len(lines)], "\n")
 		htmlContent := template.HTML(string(blackfriday.MarkdownCommon([]byte(content))))
-		posts = append(posts, Post{slug, title, date, htmlContent})
+		posts = append(posts, Post{slug, title, date, country, htmlContent})
 	}
 
 	sort.Sort(posts)

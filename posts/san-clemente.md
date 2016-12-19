@@ -1,5 +1,6 @@
 San Clemente Del Tuyú
 16-12-2016
+ar
 
 Nous sommes bien arrivés à [**San Clemente Del Tuyú**](https://goo.gl/maps/rAjX9KYPCF82), notre première destination, après avoir traversé la Pampa pendant quelques heures.
 

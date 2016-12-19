@@ -1,7 +1,8 @@
 Déménagement
 6-12-2016
+fr
 
-Quelques étapes incontournables pour vider une maison de 70m² : 
+Quelques étapes incontournables pour vider une maison de 70m² :
 
 <figure>
   <img src="/images/demenagement/1.jpg" class="image" alt="dem1" style="width:200px"/>

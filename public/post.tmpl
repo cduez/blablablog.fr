@@ -1,11 +1,12 @@
 {{ define "header" }}
-  <a href="/" title="Retour à l'accueil"><img class="blogLogo blogLogo--small" src="/images/logo.png"></img></a>
+  <a href="/" title="Retour à l'accueil"><img class="blogLogo blogLogo--small" src="/images/logo.png"></a>
 {{ end }}
 
 {{ define "content" }}
 <article>
   <h2 class="postTitle">
-  {{ .Title }}
+    <img src="/images/flags/{{ .Country }}.svg" class="flag">
+    {{ .Title }}
   </h2>
   <time class="postTime">{{ format .Date }}</time>
 
