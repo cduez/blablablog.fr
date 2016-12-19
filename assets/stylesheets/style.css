@@ -46,6 +46,7 @@ header {
 
 .postTitle {
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 .postTime {
