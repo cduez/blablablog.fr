@@ -1,0 +1,12 @@
+[Unit]
+Description=BlaBlaBlog
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/blog/blog
+Restart=on-failure
+WorkingDirectory=/blog
+
+[Install]
+WantedBy=multi-user.target
