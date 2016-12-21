@@ -16,13 +16,6 @@
 
 {{ define "scripts" }}
 <script>
-var viewer = new Viewer(document.querySelector('article'), {
-  movable: false,
-  zoomable: false,
-  rotatable: false,
-  scalable: false,
-  transition: false
-
-});
+  new MiniLightbox('figure img');
 </script>
 {{ end }}
