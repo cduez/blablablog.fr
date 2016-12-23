@@ -9,15 +9,19 @@ import (
 	"github.com/Machiel/slugify"
 	"path/filepath"
 	"sort"
+	"path"
+	"bytes"
 )
 
 type Post struct {
 	Slug string
+	Name string
 	Title string
 	Date time.Time
 	Country string // ISO 3166
 	Content template.HTML
 }
+
 type Posts []Post
 
 func (p Posts) Len() int           { return len(p) }
@@ -33,6 +37,22 @@ func (p Posts) FindBySlug(slug string) Post {
 	return Post{}
 }
 
+func ImgUrl(name string) func(string)string {
+	return func(filename string) string {
+		return generateImgUrl("/images", name, filename)
+	}
+}
+
+func ImgThumbUrl(name string) func(string)string {
+	return func(filename string) string {
+		return generateImgUrl("/images", name, "thumbs/" + filename)
+	}
+}
+
+func generateImgUrl(prefix, name, filename string) string {
+	return prefix + "/" + name + "/" + filename
+}
+
 func NewPosts() Posts {
 	posts := Posts{}
 
@@ -43,11 +63,27 @@ func NewPosts() Posts {
 		lines := strings.Split(string(data), "\n")
 		title := string(lines[0])
 		slug  := slugify.Slugify(title)
+		name  := strings.TrimSuffix(path.Base(file), filepath.Ext(file))
 		date := ParseDate(string(lines[1]))
 		country := string(lines[2])
 		content := strings.Join(lines[4:len(lines)], "\n")
-		htmlContent := template.HTML(string(blackfriday.MarkdownCommon([]byte(content))))
-		posts = append(posts, Post{slug, title, date, country, htmlContent})
+
+
+		funcMap := template.FuncMap{
+			"img": ImgUrl(name),
+			"imgThumb": ImgThumbUrl(name),
+		}
+
+		var buf bytes.Buffer
+		tmpl := template.Must(template.New("post").Funcs(funcMap).Parse(string(content)))
+		err := tmpl.Execute(&buf, nil)
+		if err != nil {
+			panic(err)
+		}
+
+		htmlContent := template.HTML(string(blackfriday.MarkdownCommon(buf.Bytes())))
+
+		posts = append(posts, Post{slug, name, title, date, country, htmlContent})
 	}
 
 	sort.Sort(posts)

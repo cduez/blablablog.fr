@@ -54,6 +54,10 @@ header {
   color: #95a5a6;
 }
 
+article figcaption {
+  font-style: italic;
+}
+
 .hr {
   border-top: 4px double #7f8c8d;
   text-align: center;
@@ -70,8 +74,13 @@ header {
   font-size: 1.5rem;
 }
 
+figure {
+  text-align: center;
+}
+
 .image {
   border-radius: 4px;
+  max-width: 200px;
 }
 
 .image:hover {
