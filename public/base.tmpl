@@ -19,12 +19,20 @@
 
     <script src="/js/mini-lightbox.min.js"></script>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    {{ template "head" }}
   </head>
   <body>
-    <div class="container">
+    <div class="{{ containerCurrentPage }}">
       <header>
         {{ template "header" }}
       </header>
+
+      <nav>
+        <ul>
+          <li><a href="/" {{ if isCurrentPage "index" }} class="active" {{ end }}>Blabla</a></li>
+          <li><a href="/map" {{ if isCurrentPage "map" }} class="active" {{ end }}>Carte</a></li>
+        </ul>
+      </nav>
 
       <main>
         {{ template "content" . }}
@@ -32,15 +40,13 @@
 
       <footer>
         <div class="hr">
-          <span class="plane">
-            &#9992;
-          </span>
+          <span class="plane">&#9992;</span>
         </div>
       </footer>
     </div>
-
-    {{ template "scripts" }}
+    {{ template "scripts" . }}
   </body>
 </html>
 
+{{ define "head" }}{{ end }}
 {{ define "scripts" }}{{ end }}
