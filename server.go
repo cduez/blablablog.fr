@@ -6,9 +6,13 @@ import (
 	"io"
 	"net/http"
 	"time"
+	"os"
+	"io/ioutil"
+	"strings"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/joho/godotenv"
 )
 
 var translateMonth map[string]string = map[string]string {
@@ -30,9 +34,19 @@ func FormatDate(date time.Time) string {
 	return fmt.Sprintf("%d %s %d", date.Day(), translateMonth[date.Month().String()], date.Year())
 }
 
-func ParseDate(date string) time.Time {
-	time, _ := time.Parse("2-1-2006", date);
-	return time
+func IsCurrentPage(currentPage string) func(string) bool {
+	return func(page string) bool {
+		return page == currentPage
+	}
+}
+
+func ContainerCurrentPage(currentPage string) string {
+	switch currentPage {
+	case "map":
+		return "container container--large"
+	}
+
+	return "container"
 }
 
 type CustomRenderer struct {}
@@ -40,17 +54,14 @@ type CustomRenderer struct {}
 func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
 	funcMap := template.FuncMap{
 		"format": FormatDate,
+		"isCurrentPage": IsCurrentPage(name),
+		"containerCurrentPage": func() string { return ContainerCurrentPage(name) },
 	}
 
 	tmpl := template.New("base.tmpl").Funcs(funcMap)
 
-	if name == "post" {
-		tmplPost := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/post.tmpl"))
-		return tmplPost.Execute(w, data)
-	} else {
-		tmplIndex := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/index.tmpl"))
-		return tmplIndex.Execute(w, data)
-	}
+	tmplParsed := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/common.tmpl" , "public/" + name + ".tmpl"))
+	return tmplParsed.Execute(w, data)
 }
 
 func Index(c echo.Context) error {
@@ -66,7 +77,34 @@ func ViewPost(c echo.Context) error {
 	return c.Render(http.StatusOK, "post", post)
 }
 
+func getPoints() (points [][]string) {
+	data, _ := ioutil.ReadFile("./points")
+	lines := strings.Split(string(data), "\n")
+
+	for _, line := range lines {
+		coord := strings.Split(line, ":")
+		if len(coord) > 1 {
+			points = append(points, coord[0:2])
+		}
+	}
+
+	return
+}
+
+func ViewMap(c echo.Context) error {
+	data :=  map[string]interface{}{
+		"token": os.Getenv("MAPBOX_TOKEN"),
+		"points": getPoints(),
+	}
+	return c.Render(http.StatusOK, "map", data)
+}
+
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		panic(err)
+	}
+
 	e := echo.New()
 	e.ShutdownTimeout = 3
 
@@ -79,6 +117,7 @@ func main() {
 	e.Renderer = &CustomRenderer{}
 
 	e.GET("/posts/:slug", ViewPost)
+	e.GET("/map", ViewMap)
 	e.GET("/", Index)
 
 	e.Logger.Fatal(e.Start(":1666"))

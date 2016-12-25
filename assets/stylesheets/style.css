@@ -23,8 +23,36 @@ a:hover {
   margin: 0 auto;
 }
 
-header {
-  margin-bottom: 70px;
+.container--large {
+  max-width: 1000px;
+}
+
+nav {
+  margin-bottom: 50px;
+  border-bottom: 4px double #7f8c8d;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav li a.active {
+  color: #95a5a6;
+  cursor: none;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .blogTitle {
@@ -32,6 +60,7 @@ header {
   font-family: 'Amatic SC', cursive;
   text-shadow: 4px 4px 4px #aaa;
   font-size: 2.7rem;
+  margin-bottom: 50px;
 }
 
 .blogLogo {
@@ -42,6 +71,7 @@ header {
 
 .blogLogo--small {
   width: 150px;
+  margin-bottom: 15px;
 }
 
 .postTitle {
@@ -114,4 +144,8 @@ figure {
 	cursor: zoom-out;
 	cursor: -webkit-zoom-out;
 	border-radius: 4px;
+}
+
+#map {
+  height: 600px;
 }

@@ -53,6 +53,11 @@ func generateImgUrl(prefix, name, filename string) string {
 	return prefix + "/" + name + "/" + filename
 }
 
+func ParseDate(date string) time.Time {
+	time, _ := time.Parse("2-1-2006", date);
+	return time
+}
+
 func NewPosts() Posts {
 	posts := Posts{}
 
@@ -67,7 +72,6 @@ func NewPosts() Posts {
 		date := ParseDate(string(lines[1]))
 		country := string(lines[2])
 		content := strings.Join(lines[4:len(lines)], "\n")
-
 
 		funcMap := template.FuncMap{
 			"img": ImgUrl(name),
