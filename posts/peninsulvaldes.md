@@ -2,7 +2,7 @@ Feliz Ano de Península Valdés!
 1-1-2017
 ar
 
-Ça y est, nous sommes au coeur du parc national de la Péninsule Valdes à *Puerto Piramides*. Sur ce site classé patrimoine mondial de l'Unesco, on peut observer de nombreux animaux : des baleines autrales (de juin à décembre), des orques (qui sont au top de la chaine alimentaire), des éléphants de mer, des lions de mer (la nouvelle passion de Laure), des manchots magellan, des autruches... et plus encore&nbsp;!
+Ça y est, nous sommes au coeur du parc national de la [Péninsule Valdes](https://fr.wikipedia.org/wiki/Péninsule_Valdés) à *Puerto Piramides*. Sur ce site classé patrimoine mondial de l'Unesco, on peut observer de nombreux animaux : des baleines autrales (de juin à décembre), des orques (qui sont au top de la chaine alimentaire), des éléphants de mer, des lions de mer (la nouvelle passion de Laure), des manchots magellan, des autruches... et plus encore&nbsp;!
 
 Nous vous souhaitons une très belle année 2017 remplie de bonheur de la Péninsule Valdes !
 
