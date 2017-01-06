@@ -84,6 +84,10 @@ nav li a.active {
   color: #95a5a6;
 }
 
+article {
+  line-height: 1.4em;
+}
+
 article figcaption {
   font-style: italic;
 }
