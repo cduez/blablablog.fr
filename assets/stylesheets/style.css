@@ -19,7 +19,7 @@ a:hover {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -85,11 +85,12 @@ nav li a.active {
 }
 
 article {
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 article figcaption {
   font-style: italic;
+  line-height: 1.4em;
 }
 
 .hr {
