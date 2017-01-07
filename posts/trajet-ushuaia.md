@@ -2,7 +2,7 @@ Comment nous sommes arrivés au bout du monde.
 02-01-2017
 ar
 
-Nous sommes à Ushuaïa pour 12 jours, mais il n'est pas si facile d'arriver au bout du monde : 
+Nous sommes à [Ushuaïa](https://goo.gl/maps/3TEFDWwJbaP2) pour 12 jours, mais il n'est pas si facile d'arriver au bout du monde : 
 
 ### 02/01/17 Puerto Pyramides > Puerto Madryn
 
