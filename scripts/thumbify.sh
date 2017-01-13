@@ -35,7 +35,7 @@ do
   convert ${img} -thumbnail ${thumbresize} -gravity center -crop ${thumbsize}x${thumbsize}+0+0 -quality ${thumbquality} "./thumbs/${img}"
 
   echo "Convert image for ${img}"
-  mogrify -resize ${resize} -quality ${quality} "${img}"
+  mogrify -strip -resize ${resize} -quality ${quality} "${img}"
 done
 
 popd > /dev/null
