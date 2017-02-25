@@ -16,7 +16,7 @@ Quelques photos de notre voyage retour vers la capitale argentine, 46 heures de 
 
 <figure>
    <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="ref4" style="width:100px"/>
-      <figcaption>Rencontre avec la très pétillante Sofia sur le chemin de la gare routière au centre ville de Bariloche. A moitié lobotomisés par les premiers 24 heures de bus, nous essayons néanmoins de suivre le détail des mille et un récits de Sofia qui semble ne jamais manquer d'énergie. </figcaption>
+      <figcaption>Rencontre avec la très pétillante Sofi sur le chemin de la gare routière au centre ville de Bariloche. A moitié lobotomisés par les premiers 24 heures de bus, nous essayons néanmoins de suivre le détail des mille et un récits de Sofi qui semble ne jamais manquer d'énergie. </figcaption>
 </figure>
 
 <figure>
