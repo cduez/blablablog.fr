@@ -45,5 +45,5 @@ Arrivée à Dallas où nous sommes immédiatement plongés dans le bain texan. I
   <img src='{{ imgThumb "11.jpg"}}' data-image-opened='{{img "11.jpg" }}' class="image" alt="ref4" style="width:100px"/>
   <img src='{{ imgThumb "12.jpg"}}' data-image-opened='{{img "12.jpg" }}' class="image" alt="ref4" style="width:100px"/>
   <img src='{{ imgThumb "13.jpg"}}' data-image-opened='{{img "13.jpg" }}' class="image" alt="ref4" style="width:100px"/>
-  <figcaption>Départ de notre road trip: les immenses plaines texanes peuplées de chevalet de pompage (extraction du pétrole).</figcaption>
+  <figcaption>Départ de notre road trip: les immenses plaines texanes peuplées de chevalets de pompage (extraction du pétrole).</figcaption>
 </figure>

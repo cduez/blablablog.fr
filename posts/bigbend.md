@@ -18,7 +18,7 @@ Découverte de ces deux parcs qui se trouvent à la frontière mexicaine. Ils so
 
 <figure>
   <img src='{{ imgThumb "30.jpg"}}' data-image-opened='{{img "30.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-  <figcaption>Les citoyens américains peuvent adopter une portion de route. Cela implique de nettoyer les bas-côtés de la route adopté, en contrepartie vous pouvez laisser un message sur le panneau qui en annonce le début. Les deux écueils de cette belle initiative sont : le danger du nettoyage de la route par des non-professionnels et le contenu des messages sur les panneaux (racisme, homophobie,...)</figcaption>
+  <figcaption>Les citoyens américains peuvent adopter une portion de route. Cela implique de nettoyer les bas-côtés de la route adoptée, en contrepartie vous pouvez laisser un message sur le panneau qui en annonce le début. Les deux écueils de cette belle initiative sont : le danger du nettoyage de la route par des non-professionnels et le contenu des messages sur les panneaux (racisme, homophobie,...)</figcaption>
 </figure>
 
 <p style="text-align:center">
