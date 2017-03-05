@@ -17,14 +17,14 @@ Arrivée à Dallas où nous sommes immédiatement plongés dans le bain texan. I
 
 <figure>
   <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="ref4" style="width:100px"/>
-  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "5.jpg" }}' class="image" alt="ref4" style="width:100px"/>
+  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "5.jpg" }}' class="image" alt="ref4" style="height:100px"/>
   <img src='{{ imgThumb "14.jpg"}}' data-image-opened='{{img "14.jpg" }}' class="image" alt="ref4" style="width:100px"/>
   <figcaption>Premiers logements à Dallas.</figcaption>
 </figure>
 
 <figure>
   <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="ref4" style="width:100px"/>
-  <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="ref4" style="width:100px"/>
+  <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="ref4" style="height:100px"/>
   <figcaption>Dallas au coucher du soleil après une promenade dans la <a href="https://en.wikipedia.org/wiki/Swiss_Avenue_Historic_District,_Dallas">Swiss Avenue</a>.</figcaption>
 </figure>
 

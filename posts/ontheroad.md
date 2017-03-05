@@ -7,17 +7,17 @@ Nous quittons le Texas pour la Louisiane. Dès le passage de la frontière, le d
 
 <figure>
   <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="ref1" style="height:100px"/>
-  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="ref2" style="height:100px"/>
+  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="ref2" style="width:100px"/>
    <figcaption>Dernier arrêt au Texas qui nous permet d'admirer le drapeau texan, le lone star flag, et surtout les très belles installations barbecue dont regorgent les aires d'autoroute. Rien de telle qu'une petite côte de boeuf pour souffler sur le chemin :  )</figcaption>
 </figure>
 
 <figure>
-  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="ref1" style="height:100px"/>
-  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="ref2" style="height:100px"/>
+  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="ref1" style="width:100px"/>
+  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="ref2" style="width:100px"/>
    <figcaption>Les fameux panneaux dont 3 spécialistes des blessures maritimes.</figcaption>
 </figure>
 
 <figure>
-  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="ref1" style="height:100px"/>
+  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="ref1" style="width:100px"/>
    <figcaption>Des ponts qui donnent le vertige!</figcaption>
 </figure>

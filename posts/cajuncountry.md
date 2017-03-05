@@ -6,16 +6,16 @@ Nous voici en Louisiane et plus spécifiquement dans le pays [Cajun](https://fr.
 
 
 <figure>
-  <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="lg1"/>
-  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="lg1"/>
-  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="lg1"/>
-  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="lg1"/>
-  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "5.jpg" }}' class="image" alt="lg1"/>
+  <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="lg1" style="width:100px"/>
+  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="lg1" style="width:100px"/>
+  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="lg1" style="width:100px"/>
+  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="lg1" style="height:100px"/>
+  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "5.jpg" }}' class="image" alt="lg1" style="height:100px"/>
 </figure>
 
 <figure>
-  <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="lg1"/>
-  <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="lg1"/>
+  <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="lg1" style="width:100px"/>
+  <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="lg1" style="height:100px"/>
   <figcaption>
     La très gracieuse et filiforme aigrette blanche.
   </figcaption>
@@ -27,18 +27,12 @@ Nous sommes arrivés en Louisiane en plein carnaval! Sur les conseils de la réc
 
 <div style="text-align: center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BojAnNhg0J4" frameborder="0" allowfullscreen></iframe>
-  <br />
-  <i>Le nouvel ami de Laure : Snoopy</i>
 </div>
 
 <div style="text-align: center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/C8NxdQ1xRTk" frameborder="0" allowfullscreen></iframe>
-  <br />
-  <i>Le nouvel ami de Laure : Snoopy</i>
 </div>
 
 <div style="text-align: center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/U90xwDvmkL0" frameborder="0" allowfullscreen></iframe>
-  <br />
-  <i>Le nouvel ami de Laure : Snoopy</i>
 </div>
