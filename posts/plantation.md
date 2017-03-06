@@ -2,7 +2,7 @@ The plantations on Great River Road
 05-03-2017
 us
 
-Poursuite de notre périple en Louisiane avec la Great River Road West Bank qui suit le Mississippi. Cette route est parsemée d'anciennes plantations de canne à sucre et nous décidons de visiter deux d'entre elles, Whitney et Laura. Les visites guidées permettent de se plonger dans le quotidien des familles propriétaires et des escalves.
+Poursuite de notre périple en Louisiane avec la Great River Road West Bank qui suit le Mississippi. Cette route est parsemée d'anciennes plantations de canne à sucre et nous décidons de visiter deux d'entre elles, Whitney et Laura. Les visites guidées permettent de se plonger dans le quotidien des familles propriétaires et des escalves. Après la guerre de sécession, les esclaves émancipés ont continué à travailler dans les plantations en étant pour la plupart sous-payés (ou par exemple payé avec "l'argent de la plantation" valable uniquement dans la plantation). Certains étaient même endettés vis-à-vis de leur employeurs car ceux-ci les rémunéraient moins que le coût du loyer et de la nourriture! Dans les plantations que nous avons visité, les esclaves "émancipés" ont continué à y travailler jusqu'en 1977!
 
 <figure>
   <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="ref1" style="height:100px"/>
