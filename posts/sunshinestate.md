@@ -13,7 +13,7 @@ Grande première pour nous, nous changeons de fuseau horaire lors d'un voyage en
 
 <figure>
   <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-  <figcaption>Première baignade à Grayton Beach. Sur la plage, je rencontre un groupe de jeunes filles et leur demande si elles se sont baignées. Elles me regardent d'un air horifié et me répondent que non car il fait beaucoup trop froid. C'est vrai que c'est l'hiver en Floride, mais il fait tout de même près de 27° au soleil et l'eau doit être à 22/24° : )</figcaption>
+  <figcaption>Première baignade à Grayton Beach. Sur la plage, je rencontre un groupe de jeunes filles et leur demande si elles se sont baignées. Elles me regardent d'un air horrifié et me répondent que non car il fait beaucoup trop froid. C'est vrai que c'est l'hiver en Floride, mais il fait tout de même près de 27° au soleil et l'eau doit être à 22/24° : )</figcaption>
 </figure>
 
 <figure>
