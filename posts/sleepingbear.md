@@ -1,4 +1,4 @@
-Sleeping Bear Dune National Lakeshore
+Sleeping Bear Dunes National Lakeshore
 28-03-2017
 us
 
