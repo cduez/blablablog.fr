@@ -17,5 +17,5 @@ Astuce du voyageur : à l'approche du soleil couchant, les élans se rapprochent
   <img src='{{ imgThumb "8.jpg"}}' data-image-opened='{{img "8.jpg" }}' class="image" alt="ref1" style="width:100px"/>
   <img src='{{ imgThumb "9.jpg"}}' data-image-opened='{{img "9.jpg" }}' class="image" alt="ref1" style="width:100px"/>
   <img src='{{ imgThumb "10.jpg"}}' data-image-opened='{{img "10.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-   <img src='{{ imgThumb "11.jpg"}}' data-image-opened='{{img "11.jpg" }}' class="image" alt="ref2" style="width:100px"/>
+  <img src='{{ imgThumb "11.jpg"}}' data-image-opened='{{img "11.jpg" }}' class="image" alt="ref2" style="width:100px"/>
 </figure>
