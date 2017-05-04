@@ -34,7 +34,7 @@ Découverte du Parc et de ses belles formations rocheuses dans le Nevada. Il est
   <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="ref2" style="width:100px"/>
   <img src='{{ imgThumb "25.jpg"}}' data-image-opened='{{img "25.jpg" }}' class="image" alt="ref2" style="width:100px"/>
   
-<figcaption>Notre *very best friend* le *Horned Lizard* mangeur de fourmies rouges qui pullulent dans le Parc.</figcaption>
+<figcaption>Notre very best friend le Horned Lizard mangeur de fourmies rouges qui pullulent dans le Parc.</figcaption>
 </figure>
 
 <div style="text-align: center;">
