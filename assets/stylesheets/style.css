@@ -122,6 +122,14 @@ figure {
   cursor: pointer;
 }
 
+.image.landscape {
+  width: 100px;
+}
+
+.image.portrait {
+  height: 100px;
+}
+
 .flag {
   width: 20px;
 }

@@ -5,8 +5,13 @@ import (
 	"bytes"
 )
 
-var HelpersFuncs = template.FuncMap{
-	"youtube": Youtube,
+func HelpersFuncs(name string) template.FuncMap{
+	return template.FuncMap{
+		"youtube": Youtube,
+		"picture": Picture(name),
+		"pictureL": PictureL(name),
+		"pictureP": PictureP(name),
+	}
 }
 
 func Youtube(videoId string) template.HTML {
@@ -19,4 +24,40 @@ func Youtube(videoId string) template.HTML {
 	}
 
 	return template.HTML(output.String())
+}
+
+type PictureParams struct {
+	Name string
+	Id string
+	Orientation string
+}
+
+func PictureFN(name, imageId, orientation string) template.HTML {
+	var output bytes.Buffer
+	tmpl := template.Must(template.New("picture").ParseFiles("public/helpers/picture.tmpl"))
+
+	err := tmpl.Execute(&output, PictureParams{name, imageId, orientation})
+	if err != nil {
+		panic(err)
+	}
+
+	return template.HTML(output.String())
+}
+
+func Picture(name string) func(string, string) template.HTML {
+	return func(imageId, orientation string) template.HTML {
+		return PictureFN(name, imageId, orientation)
+	}
+}
+
+func PictureL(name string) func(string) template.HTML {
+	return func(imageId string) template.HTML {
+		return PictureFN(name, imageId, "landscape")
+	}
+}
+
+func PictureP(name string) func(string) template.HTML {
+	return func(imageId string) template.HTML {
+		return PictureFN(name, imageId, "portrait")
+	}
 }

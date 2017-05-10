@@ -78,7 +78,7 @@ func NewPosts() Posts {
 			"imgThumb": ImgThumbUrl(name),
 		}
 
-		for k,v := range HelpersFuncs {
+		for k,v := range HelpersFuncs(name) {
 			funcMap[k] = v
 		}
 
