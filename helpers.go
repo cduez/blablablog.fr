@@ -3,6 +3,7 @@ package main
 import (
 	"html/template"
 	"bytes"
+	"strconv"
 )
 
 func HelpersFuncs(name string) template.FuncMap{
@@ -11,6 +12,7 @@ func HelpersFuncs(name string) template.FuncMap{
 		"picture": Picture(name),
 		"pictureL": PictureL(name),
 		"pictureP": PictureP(name),
+		"groupPicture": GroupPicture(name),
 	}
 }
 
@@ -59,5 +61,17 @@ func PictureL(name string) func(string) template.HTML {
 func PictureP(name string) func(string) template.HTML {
 	return func(imageId string) template.HTML {
 		return PictureFN(name, imageId, "portrait")
+	}
+}
+
+func GroupPicture(name string) func(int, int) template.HTML {
+	var buffer template.HTML
+
+	return func(first, last int) template.HTML {
+		for i := first; i <= last; i++ {
+			buffer += PictureL(name)(strconv.Itoa(i))
+		}
+
+		return buffer
 	}
 }
