@@ -78,6 +78,10 @@ func NewPosts() Posts {
 			"imgThumb": ImgThumbUrl(name),
 		}
 
+		for k,v := range HelpersFuncs {
+			funcMap[k] = v
+		}
+
 		var buf bytes.Buffer
 		tmpl := template.Must(template.New("post").Funcs(funcMap).Parse(string(content)))
 		err := tmpl.Execute(&buf, nil)
