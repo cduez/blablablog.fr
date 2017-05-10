@@ -39,7 +39,7 @@ Y-a-t-il d'autres formes de vie dans l'univers? Nous allons tenter de répondre 
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/lKPrvOKjf8g" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "lKPrvOKjf8g" }}
 </div>
 
 <figure>

@@ -39,15 +39,15 @@ Visite guidée du *slough* (marécages purifiés avec de l'eau en mouvement perm
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/XkzE4vLIeuA" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "XkzE4vLIeuA" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/TeHWMEZU3fQ" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "TeHWMEZU3fQ" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/FFGeArkqGXM" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "FFGeArkqGXM" }}
 </div>
 
 ### Lee County Manatee Park

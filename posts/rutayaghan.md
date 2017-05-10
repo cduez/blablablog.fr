@@ -12,7 +12,7 @@ Le dernier dimanche de chaque mois, le Yaghan relie Puerto Williams à Puerto To
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gS9LkzKVdpE" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "gS9LkzKVdpE" }}
 </div>
 
 
@@ -38,5 +38,5 @@ Une fois de retour de Puerto Toro, direction Punta Arenas avec une traversée qu
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/w8nR2cWeNKQ" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "w8nR2cWeNKQ" }}
 </div>

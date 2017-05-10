@@ -20,5 +20,5 @@ Les habitants de l'île sont très accueillants; certains ont même proposé spo
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/_Z9ak9dNQ1s" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "_Z9ak9dNQ1s" }}
 </div>

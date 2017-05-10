@@ -61,11 +61,11 @@ Le deuxième jour, nous avons pédalé jusqu'à la tour d'observation de Shark V
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/X9NjlSxR89A" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "X9NjlSxR89A" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/b10YB4RazcE" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "b10YB4RazcE" }}
 </div>
 
 ### Gulf Coast

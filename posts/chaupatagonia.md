@@ -33,10 +33,10 @@ Et pour conclure cette belle aventure patagonienne, quelques images de nos rési
 
 
 <div style="text-align:center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tT_QaIK_CfE" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "tT_QaIK_CfE" }}
 </div>
 
 <div style="text-align:center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/awcmGho5RlI" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "awcmGho5RlI" }}
 </div>
 

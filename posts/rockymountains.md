@@ -36,13 +36,13 @@ Et, plus important encore, nous avons trouvé une réponse à la question métap
 
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8bQ7JSn7mis" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "8bQ7JSn7mis" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/XRybi9nYSEA" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "XRybi9nYSEA" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/n4ixHHQS11k" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "n4ixHHQS11k" }}
 </div>

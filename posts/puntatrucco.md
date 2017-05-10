@@ -26,7 +26,7 @@ Petite ballade le long de la côte où nous avons pu admirer le paysage et les o
 </p>
 
 <div style="text-align:center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5-Q4l238QVc" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "5-Q4l238QVc" }}
   <br>
   <i>Et voici l'homme qui murmurait à l'oreille des Ibis à face noire (rampant façon GI sur les dunes de coquillage) </i>
 <div>

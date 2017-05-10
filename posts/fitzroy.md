@@ -32,5 +32,5 @@ Arrivée à *El Chaltén* situé dans le parc des Glaciers. Notre premiére sort
 </p>
 
 <div style="text-align:center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/xv0LHjZuBWQ" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "xv0LHjZuBWQ" }}
 </div>

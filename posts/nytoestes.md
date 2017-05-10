@@ -28,5 +28,5 @@ Enfin, bref, nous voici à Estes Park, aux portes du Parc National des Montagnes
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ea21mcQ2o3E" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "Ea21mcQ2o3E" }}
 </div>
