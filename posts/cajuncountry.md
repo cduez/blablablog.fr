@@ -26,13 +26,13 @@ Nous sommes arrivés en Louisiane en plein carnaval! Sur les conseils de la réc
 
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/BojAnNhg0J4" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "BojAnNhg0J4" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/C8NxdQ1xRTk" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "C8NxdQ1xRTk" }}
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/U90xwDvmkL0" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "U90xwDvmkL0" }}
 </div>

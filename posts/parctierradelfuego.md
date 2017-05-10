@@ -23,5 +23,5 @@ Petite ballade dans le parc National de la Terre de Feu. En haut du sommet Guana
 </p>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8M8kvPfi--4" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "8M8kvPfi--4" }}
 </div>

@@ -42,7 +42,7 @@ Ici Puerto Williams, sur l'île Navarino, le zodiac qui fait la traversée depui
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/TALmnNFnFnw" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "TALmnNFnFnw" }}
   <br />
   <i>Le nouvel ami de Laure : Snoopy</i>
 </div>

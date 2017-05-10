@@ -42,7 +42,7 @@ Conseil numéro 1: ne pas visiter Death Valley entre avril et octobre. En effet,
 </figure>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6agoCdTvhYs" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "6agoCdTvhYs" }}
 </div>
 
 <figure>

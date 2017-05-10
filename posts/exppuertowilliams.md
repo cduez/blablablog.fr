@@ -26,7 +26,7 @@ Ballade vers une cascade dans les environs et retour par la côte afin de contin
 </p>
 
 <div style="text-align:center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rfoWRq7wIN0" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "rfoWRq7wIN0" }}
 </div>
 
 ### A l'est : Punta Eugenia

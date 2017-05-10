@@ -52,6 +52,6 @@ Découverte du célébrissime Parc avec deux jours de ballades intenses. Le deux
 
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/OUZ4mcPh7hs" frameborder="0" allowfullscreen></iframe>
+  {{ youtube "OUZ4mcPh7hs" }}
 </div>
 
