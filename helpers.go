@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"bytes"
 	"strconv"
+	"strings"
 )
 
 func HelpersFuncs(name string) template.FuncMap{
@@ -45,12 +46,32 @@ func Picture(name string) func(string) template.HTML {
 	}
 }
 
-func GroupPicture(name string) func(int, int, string) template.HTML {
-	return func(first, last int, caption string) template.HTML {
+func AddPictureByRange(buffer *template.HTML, name string, first int, last int) {
+	}
+
+func GroupPicture(name string) func(string, string) template.HTML {
+	// "1-15,6,23-24" "caption"
+	return func(groups, caption string) template.HTML {
 		var buffer template.HTML = "<figure>"
-		for i := first; i <= last; i++ {
-			buffer += Picture(name)(strconv.Itoa(i))
+		splittedGroup := strings.Split(groups, ",")
+
+		for _, rg := range splittedGroup {
+			var first, last int
+
+			if strings.Contains(rg, "-") {
+				splitted := strings.Split(rg, "-")
+				first, _ = strconv.Atoi(splitted[0])
+				last, _ = strconv.Atoi(splitted[1])
+			} else {
+				first, _ = strconv.Atoi(rg)
+				last = first
+			}
+
+			for i := first; i <= last; i++ {
+				buffer += Picture(name)(strconv.Itoa(i))
+			}
 		}
+
 		if caption != "" {
 			buffer += template.HTML("<figcaption>" + caption + "</figcaption>")
 		}
