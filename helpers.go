@@ -46,9 +46,8 @@ func Picture(name string) func(string) template.HTML {
 }
 
 func GroupPicture(name string) func(int, int, string) template.HTML {
-	var buffer template.HTML = "<figure>"
-
 	return func(first, last int, caption string) template.HTML {
+		var buffer template.HTML = "<figure>"
 		for i := first; i <= last; i++ {
 			buffer += Picture(name)(strconv.Itoa(i))
 		}
