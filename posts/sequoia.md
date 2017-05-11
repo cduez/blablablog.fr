@@ -8,7 +8,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
 <figure>
   <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="ref1" />
   <img src='{{ imgThumb "14.jpg"}}' data-image-opened='{{img "14.jpg" }}' class="image" alt="ref2" />
-  
+
   <figcaption>Les racines du séquoia poussent à environ 1 métre de profondeur. Quand le sol devient trop instable (notamment du fait de l'humidité), il est déséquilibré et élargit la base de son tronc. Mais si cela ne suffit pas, il finit par tomber.</figcaption>
 </figure>
 
@@ -17,7 +17,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
   <img src='{{ imgThumb "35.jpg"}}' data-image-opened='{{img "35.jpg" }}' class="image" alt="ref1" />
   <img src='{{ imgThumb "37.jpg"}}' data-image-opened='{{img "37.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "40.jpg"}}' data-image-opened='{{img "40.jpg" }}' class="image" alt="ref2" />
-  
+
   <figcaption>Les prairies verdoyantes de la forêt.</figcaption>
 </figure>
 
@@ -25,27 +25,31 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
   <img src='{{ imgThumb "19.jpg"}}' data-image-opened='{{img "19.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "21.jpg"}}' data-image-opened='{{img "21.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "38.jpg"}}' data-image-opened='{{img "38.jpg" }}' class="image" alt="ref2" />
-  
+
   <figcaption>Hale Tharp fut le premier à faire acte de propriété sur le terrain actuel du Parc au 19éme sièle. Il fut impressionné par la taille des arbres mais surtout par l'abondance des prairies qui lui permettait de nourrir ses troupeaux (et oui il faut bien manger : ). La derniére photo montre l'habitation de Tharp construite à partir d'un tronc de séquoia tombé. La cabane du milieu est celle d'un autre éleveur qui pensait pouvoir renvendiquer une partie des terres en y construisant son habitation (mais, bien sûr, Tharp ne s'est pas laissé faire, l'éleveur a dû quitter les lieux manu militari et  la cabane a été nommée "cabane du squatteur" : ).</figcaption>
 </figure>
 
 <figure>
   <img src='{{ imgThumb "42.jpg"}}' data-image-opened='{{img "42.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "43.jpg"}}' data-image-opened='{{img "43.jpg" }}' class="image" alt="ref2" />
-  
+
   <figcaption>Les mule deers investissent le parking du centre des visiteurs à la tombée du jour.</figcaption>
 </figure>
 
 <figure>
   <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="ref1" />
   <img src='{{ imgThumb "39.jpg"}}' data-image-opened='{{img "39.jpg" }}' class="image" alt="ref2" />
-  
+
   <figcaption>La Forêt des Géants, paradis des castors!.</figcaption>
 </figure>
 
+<div style="text-align:center">
+  {{ youtube "Lj_HwanH-5o" }}
+</div>
+
 <figure>
   <img src='{{ imgThumb "32.jpg"}}' data-image-opened='{{img "32.jpg" }}' class="image" alt="ref1" />
-  
+
   <figcaption>Ammospermophilus leucurus (Écureuil-antilope à queue blanche)</figcaption>
 </figure>
 
