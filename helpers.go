@@ -64,13 +64,17 @@ func PictureP(name string) func(string) template.HTML {
 	}
 }
 
-func GroupPicture(name string) func(int, int) template.HTML {
-	var buffer template.HTML
+func GroupPicture(name string) func(int, int, string) template.HTML {
+	var buffer template.HTML = "<figure>"
 
-	return func(first, last int) template.HTML {
+	return func(first, last int, caption string) template.HTML {
 		for i := first; i <= last; i++ {
 			buffer += PictureL(name)(strconv.Itoa(i))
 		}
+		if caption != "" {
+			buffer += template.HTML("<figcaption>" + caption + "</figcaption>")
+		}
+		buffer += "</figure>"
 
 		return buffer
 	}
