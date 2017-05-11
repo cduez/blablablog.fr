@@ -18,7 +18,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
   <img src='{{ imgThumb "37.jpg"}}' data-image-opened='{{img "37.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "40.jpg"}}' data-image-opened='{{img "40.jpg" }}' class="image" alt="ref2" />
 
-  <figcaption>Les prairies verdoyantes de la forêt.</figcaption>
+  <figcaption>Les prairies verdoyantes de la Forêt.</figcaption>
 </figure>
 
 <figure>
@@ -26,7 +26,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
   <img src='{{ imgThumb "21.jpg"}}' data-image-opened='{{img "21.jpg" }}' class="image" alt="ref2" />
   <img src='{{ imgThumb "38.jpg"}}' data-image-opened='{{img "38.jpg" }}' class="image" alt="ref2" />
 
-  <figcaption>Hale Tharp fut le premier à faire acte de propriété sur le terrain actuel du Parc au 19éme sièle. Il fut impressionné par la taille des arbres mais surtout par l'abondance des prairies qui lui permettait de nourrir ses troupeaux (et oui il faut bien manger : ). La derniére photo montre l'habitation de Tharp construite à partir d'un tronc de séquoia tombé. La cabane du milieu est celle d'un autre éleveur qui pensait pouvoir renvendiquer une partie des terres en y construisant son habitation (mais, bien sûr, Tharp ne s'est pas laissé faire, l'éleveur a dû quitter les lieux manu militari et  la cabane a été nommée "cabane du squatteur" : ).</figcaption>
+  <figcaption>Hale Tharp fut le premier à faire acte de propriété sur le terrain actuel du Parc au 19ème siècle. Il fut impressionné par la taille des arbres mais surtout par l'abondance des prairies qui lui permettait de nourrir ses troupeaux (et oui il faut bien manger : ). La derniére photo montre l'habitation de Tharp construite à partir d'un tronc de séquoia tombé. La cabane du milieu est celle d'un autre éleveur qui pensait pouvoir renvendiquer une partie des terres en y construisant son habitation (mais, bien sûr, Tharp ne s'est pas laissé faire, l'éleveur a dû quitter les lieux manu militari et  la cabane a été nommée "cabane du squatteur" : ).</figcaption>
 </figure>
 
 <figure>
@@ -67,7 +67,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
 
 <figure>
   <img src='{{ imgThumb "15.jpg"}}' data-image-opened='{{img "15.jpg" }}' class="image" alt="ref2" />
-  <figcaption>Le General Sherman Tree, ou le Sherman pour les intimes, est l'arbre le plus large du monde avec ses 31 mètres de diamètre. Dans sa catégorie, c'est un jeunot de 2200 ans. En effet, certains autres séquoias de la Fôret sont beaucoup plus âgés mais néanmoins moins larges. </figcaption>
+  <figcaption>Le General Sherman Tree, ou le Sherman pour les intimes, est l'arbre le plus large du monde avec ses 31 mètres de diamètre. Dans sa catégorie, c'est un jeunot de 2200 ans. En effet, certains autres séquoias de la Forêt sont beaucoup plus âgés mais néanmoins moins larges. </figcaption>
 </figure>
 
 <figure>
