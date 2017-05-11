@@ -9,6 +9,7 @@ import (
 	"os"
 	"io/ioutil"
 	"strings"
+	"crypto/sha1"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
@@ -49,6 +50,27 @@ func ContainerCurrentPage(currentPage string) string {
 	return "container"
 }
 
+var cachedStyleSHA1 string
+func styleSHA1() string {
+	if cachedStyleSHA1 != "" {
+		return cachedStyleSHA1
+	}
+	fmt.Println("copute")
+	f, err := os.Open("assets/stylesheets/style.css")
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+
+	h := sha1.New()
+	if _, err := io.Copy(h, f); err != nil {
+		panic(err)
+	}
+	cachedStyleSHA1 = fmt.Sprintf("%x", h.Sum(nil))
+
+	return cachedStyleSHA1
+}
+
 type CustomRenderer struct {}
 
 func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
@@ -56,6 +78,7 @@ func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c ec
 		"format": FormatDate,
 		"isCurrentPage": IsCurrentPage(name),
 		"containerCurrentPage": func() string { return ContainerCurrentPage(name) },
+		"styleSHA1": styleSHA1,
 	}
 
 	tmpl := template.New("base.tmpl").Funcs(funcMap)
