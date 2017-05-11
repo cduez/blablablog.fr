@@ -10,8 +10,6 @@ func HelpersFuncs(name string) template.FuncMap{
 	return template.FuncMap{
 		"youtube": Youtube,
 		"picture": Picture(name),
-		"pictureL": PictureL(name),
-		"pictureP": PictureP(name),
 		"groupPicture": GroupPicture(name),
 	}
 }
@@ -31,36 +29,19 @@ func Youtube(videoId string) template.HTML {
 type PictureParams struct {
 	Name string
 	Id string
-	Orientation string
 }
 
-func PictureFN(name, imageId, orientation string) template.HTML {
-	var output bytes.Buffer
-	tmpl := template.Must(template.New("picture").ParseFiles("public/helpers/picture.tmpl"))
-
-	err := tmpl.Execute(&output, PictureParams{name, imageId, orientation})
-	if err != nil {
-		panic(err)
-	}
-
-	return template.HTML(output.String())
-}
-
-func Picture(name string) func(string, string) template.HTML {
-	return func(imageId, orientation string) template.HTML {
-		return PictureFN(name, imageId, orientation)
-	}
-}
-
-func PictureL(name string) func(string) template.HTML {
+func Picture(name string) func(string) template.HTML {
 	return func(imageId string) template.HTML {
-		return PictureFN(name, imageId, "landscape")
-	}
-}
+		var output bytes.Buffer
+		tmpl := template.Must(template.New("picture").ParseFiles("public/helpers/picture.tmpl"))
 
-func PictureP(name string) func(string) template.HTML {
-	return func(imageId string) template.HTML {
-		return PictureFN(name, imageId, "portrait")
+		err := tmpl.Execute(&output, PictureParams{name, imageId})
+		if err != nil {
+			panic(err)
+		}
+
+		return template.HTML(output.String())
 	}
 }
 
@@ -69,7 +50,7 @@ func GroupPicture(name string) func(int, int, string) template.HTML {
 
 	return func(first, last int, caption string) template.HTML {
 		for i := first; i <= last; i++ {
-			buffer += PictureL(name)(strconv.Itoa(i))
+			buffer += Picture(name)(strconv.Itoa(i))
 		}
 		if caption != "" {
 			buffer += template.HTML("<figcaption>" + caption + "</figcaption>")

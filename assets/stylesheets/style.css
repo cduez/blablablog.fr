@@ -115,19 +115,12 @@ figure {
 
 .image {
   border-radius: 4px;
-  max-width: 200px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .image:hover {
   cursor: pointer;
-}
-
-.image.landscape {
-  width: 100px;
-}
-
-.image.portrait {
-  height: 100px;
 }
 
 .flag {
