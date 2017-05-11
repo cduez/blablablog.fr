@@ -50,11 +50,7 @@ func ContainerCurrentPage(currentPage string) string {
 	return "container"
 }
 
-var cachedStyleSHA1 string
 func styleSHA1() string {
-	if cachedStyleSHA1 != "" {
-		return cachedStyleSHA1
-	}
 	fmt.Println("copute")
 	f, err := os.Open("assets/stylesheets/style.css")
 	if err != nil {
@@ -66,9 +62,7 @@ func styleSHA1() string {
 	if _, err := io.Copy(h, f); err != nil {
 		panic(err)
 	}
-	cachedStyleSHA1 = fmt.Sprintf("%x", h.Sum(nil))
-
-	return cachedStyleSHA1
+	return fmt.Sprintf("%x", h.Sum(nil))
 }
 
 type CustomRenderer struct {}
