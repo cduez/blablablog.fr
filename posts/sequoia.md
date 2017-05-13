@@ -14,7 +14,7 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
 
 {{ pictures "6,39" "La Forêt des Géants, paradis des castors!." }}
 
-<div style="text-align:center">
+<div class="center">
   {{ youtube "Lj_HwanH-5o" }}
 </div>
 
