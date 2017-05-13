@@ -11,7 +11,7 @@ func HelpersFuncs(name string) template.FuncMap{
 	return template.FuncMap{
 		"youtube": Youtube,
 		"picture": Picture(name),
-		"groupPicture": GroupPicture(name),
+		"pictures": Pictures(name),
 	}
 }
 
@@ -49,7 +49,7 @@ func Picture(name string) func(string) template.HTML {
 func AddPictureByRange(buffer *template.HTML, name string, first int, last int) {
 	}
 
-func GroupPicture(name string) func(string, string) template.HTML {
+func Pictures(name string) func(string, string) template.HTML {
 	// "1-15,6,23-24" "caption"
 	return func(groups, caption string) template.HTML {
 		var buffer template.HTML = "<figure>"
