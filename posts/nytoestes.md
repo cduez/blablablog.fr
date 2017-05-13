@@ -6,27 +6,12 @@ Voyage avec United Airlines en direction de Denver: nous découvrons l'excitatio
 
 Enfin, bref, nous voici à Estes Park, aux portes du Parc National des Montagnes Rocheuses. Autour de notre résidence, les wapitis se promènent et grignotent le gazon. Nous réalisons assez tard que nous sommes à 2500 mètres d'altitude, ce qui est assez dépaysant en plus des deux heures de décalage horaire et des wapitis dans le jardin : )
 
-<figure>
-  <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="ref2" style="height:100px"/>
-  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-<figcaption>Rocking chairs à l'aéroport de Boston.</figcaption>
-</figure>
+{{ pictures "1-2" "Rocking chairs à l'aéroport de Boston." }}
 
-<figure>
-  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-  <img src='{{ imgThumb "5.jpg"}}' data-image-opened='{{img "5.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-  <img src='{{ imgThumb "6.jpg"}}' data-image-opened='{{img "6.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-<figcaption>Wapitis dans le jardin.</figcaption>
-</figure>
+{{ pictures "3-6" "Wapitis dans le jardin." }}
 
-<figure>
-  <img src='{{ imgThumb "7.jpg"}}' data-image-opened='{{img "7.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-  <img src='{{ imgThumb "8.jpg"}}' data-image-opened='{{img "8.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-  <img src='{{ imgThumb "9.jpg"}}' data-image-opened='{{img "9.jpg" }}' class="image" alt="ref1" style="width:100px"/>
-<figcaption>Notre nouvelle voiture de location, pratique pour aller chercher du bois dans la forêt!</figcaption>
-</figure>
+{{ pictures "7-9" "Notre nouvelle voiture de location, pratique pour aller chercher du bois dans la forêt!" }}
 
-<div style="text-align: center;">
+<div class="center">
   {{ youtube "Ea21mcQ2o3E" }}
 </div>
