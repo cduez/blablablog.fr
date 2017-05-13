@@ -10,6 +10,4 @@ Dans le pub du village, nous sommes amenés à manger la pizza la plus étrange 
 
 Après cette épique pizza, nous donnerons bientôt des nouvelles pour rassurer tout le monde : )
 
-<figure>
-  <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="ref2" style="width:100px"/>
-</figure>
+{{ pictures "1" "" }}
