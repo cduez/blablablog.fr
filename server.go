@@ -51,7 +51,6 @@ func ContainerCurrentPage(currentPage string) string {
 }
 
 func styleSHA1() string {
-	fmt.Println("copute")
 	f, err := os.Open("assets/stylesheets/style.css")
 	if err != nil {
 		panic(err)
