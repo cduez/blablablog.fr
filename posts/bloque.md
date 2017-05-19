@@ -8,22 +8,10 @@ Nous logeons dans un appartement proche du centre de Bariloche avec vue sur le l
 
 Du fait de fortes rafales de vent, le parc national est malheureusement fermé aujourd'hui, ce qui nous permet de mettre plein d'infos intelligentes sur le blog. Nous espérons démarrer les balades dès demain !
 
-<figure>
-  <img src='{{ imgThumb "1.jpg"}}' data-image-opened='{{img "1.jpg" }}' class="image" alt="blo1"/>
-  <figcaption>Plus rapide que son ombre: El Rapido Del Sud.</figcaption>
-</figure>
+{{ pictures "1" "Plus rapide que son ombre: El Rapido Del Sud." }}
 
-<figure>
-  <img src='{{ imgThumb "2.jpg"}}' data-image-opened='{{img "2.jpg" }}' class="image" alt="blo2"/>
-  <figcaption>Vos vaccinations sont à jour ? En cas de doute, consultez votre bouteille de lait demi-écrémé du matin.</figcaption>
-</figure>
+{{ pictures "2" "Vos vaccinations sont à jour ? En cas de doute, consultez votre bouteille de lait demi-écrémé du matin." }}
 
-<figure>
-  <img src='{{ imgThumb "3.jpg"}}' data-image-opened='{{img "3.jpg" }}' class="image" alt="blo3"/>
-  <figcaption>Cyril en profite pour découvrir les spécialités chimico-gastronomiques locales.</figcaption>
-</figure>
+{{ pictures "3" "Cyril en profite pour découvrir les spécialités chimico-gastronomiques locales." }}
 
-<figure>
-  <img src='{{ imgThumb "4.jpg"}}' data-image-opened='{{img "4.jpg" }}' class="image" alt="blo4"/>
-  <figcaption>Le lac Nahuel Huapi déchaîné avec la Cordillère des Andes en fond.</figcaption>
-</figure>
+{{ pictures "4" "Le lac Nahuel Huapi déchaîné avec la Cordillère des Andes en fond." }}
