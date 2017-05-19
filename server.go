@@ -1,34 +1,34 @@
 package main
 
 import (
+	"crypto/sha1"
 	"fmt"
 	"html/template"
 	"io"
-	"net/http"
-	"time"
-	"os"
 	"io/ioutil"
+	"net/http"
+	"os"
 	"strings"
-	"crypto/sha1"
+	"time"
 
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/joho/godotenv"
 )
 
-var translateMonth map[string]string = map[string]string {
-	"January": "Janvier",
-	"February": "Février",
-	"March": "Mars",
-	"April": "Avril",
-	"May": "Mai",
-	"June": "Juin",
-	"July": "Juillet",
-	"August": "Août",
+var translateMonth map[string]string = map[string]string{
+	"January":   "Janvier",
+	"February":  "Février",
+	"March":     "Mars",
+	"April":     "Avril",
+	"May":       "Mai",
+	"June":      "Juin",
+	"July":      "Juillet",
+	"August":    "Août",
 	"September": "Septembre",
-	"October": "Octobre",
-	"November": "Novembre",
-	"December": "Décembre",
+	"October":   "Octobre",
+	"November":  "Novembre",
+	"December":  "Décembre",
 }
 
 func FormatDate(date time.Time) string {
@@ -64,19 +64,19 @@ func styleSHA1() string {
 	return fmt.Sprintf("%x", h.Sum(nil))
 }
 
-type CustomRenderer struct {}
+type CustomRenderer struct{}
 
 func (t *CustomRenderer) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
 	funcMap := template.FuncMap{
-		"format": FormatDate,
-		"isCurrentPage": IsCurrentPage(name),
+		"format":               FormatDate,
+		"isCurrentPage":        IsCurrentPage(name),
 		"containerCurrentPage": func() string { return ContainerCurrentPage(name) },
-		"styleSHA1": styleSHA1,
+		"styleSHA1":            styleSHA1,
 	}
 
 	tmpl := template.New("base.tmpl").Funcs(funcMap)
 
-	tmplParsed := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/common.tmpl" , "public/" + name + ".tmpl"))
+	tmplParsed := template.Must(tmpl.ParseFiles("public/base.tmpl", "public/common.tmpl", "public/"+name+".tmpl"))
 	return tmplParsed.Execute(w, data)
 }
 
@@ -108,8 +108,8 @@ func getPoints() (points [][]string) {
 }
 
 func ViewMap(c echo.Context) error {
-	data :=  map[string]interface{}{
-		"token": os.Getenv("MAPBOX_TOKEN"),
+	data := map[string]interface{}{
+		"token":  os.Getenv("MAPBOX_TOKEN"),
 		"points": getPoints(),
 	}
 	return c.Render(http.StatusOK, "map", data)

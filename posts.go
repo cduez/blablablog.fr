@@ -1,23 +1,23 @@
 package main
 
 import (
-	"time"
+	"bytes"
+	"github.com/Machiel/slugify"
+	"github.com/russross/blackfriday"
 	"html/template"
 	"io/ioutil"
-	"strings"
-	"github.com/russross/blackfriday"
-	"github.com/Machiel/slugify"
+	"path"
 	"path/filepath"
 	"sort"
-	"path"
-	"bytes"
+	"strings"
+	"time"
 )
 
 type Post struct {
-	Slug string
-	Name string
-	Title string
-	Date time.Time
+	Slug    string
+	Name    string
+	Title   string
+	Date    time.Time
 	Country string // ISO 3166
 	Content template.HTML
 }
@@ -38,7 +38,7 @@ func (p Posts) FindBySlug(slug string) Post {
 }
 
 func ParseDate(date string) time.Time {
-	time, _ := time.Parse("2-1-2006", date);
+	time, _ := time.Parse("2-1-2006", date)
 	return time
 }
 
@@ -51,8 +51,8 @@ func NewPosts() Posts {
 
 		lines := strings.Split(string(data), "\n")
 		title := string(lines[0])
-		slug  := slugify.Slugify(title)
-		name  := strings.TrimSuffix(path.Base(file), filepath.Ext(file))
+		slug := slugify.Slugify(title)
+		name := strings.TrimSuffix(path.Base(file), filepath.Ext(file))
 		date := ParseDate(string(lines[1]))
 		country := string(lines[2])
 		content := strings.Join(lines[4:len(lines)], "\n")

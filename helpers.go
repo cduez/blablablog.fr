@@ -1,16 +1,16 @@
 package main
 
 import (
-	"html/template"
 	"bytes"
+	"html/template"
 	"strconv"
 	"strings"
 )
 
-func HelpersFuncs(name string) template.FuncMap{
+func HelpersFuncs(name string) template.FuncMap {
 	return template.FuncMap{
-		"youtube": Youtube,
-		"picture": Picture(name),
+		"youtube":  Youtube,
+		"picture":  Picture(name),
 		"pictures": Pictures(name),
 	}
 }
@@ -19,7 +19,7 @@ func Youtube(videoId string) template.HTML {
 	var output bytes.Buffer
 	tmpl := template.Must(template.New("youtube").ParseFiles("public/helpers/youtube.tmpl"))
 
-	err := tmpl.Execute(&output, struct{Id string}{videoId,})
+	err := tmpl.Execute(&output, struct{ Id string }{videoId})
 	if err != nil {
 		panic(err)
 	}
@@ -29,7 +29,7 @@ func Youtube(videoId string) template.HTML {
 
 type PictureParams struct {
 	Name string
-	Id string
+	Id   string
 }
 
 func Picture(name string) func(string) template.HTML {
@@ -47,7 +47,7 @@ func Picture(name string) func(string) template.HTML {
 }
 
 func AddPictureByRange(buffer *template.HTML, name string, first int, last int) {
-	}
+}
 
 func Pictures(name string) func(string, string) template.HTML {
 	// "1-15,6,23-24" "caption"
