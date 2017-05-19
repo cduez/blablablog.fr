@@ -37,22 +37,6 @@ func (p Posts) FindBySlug(slug string) Post {
 	return Post{}
 }
 
-func ImgUrl(name string) func(string)string {
-	return func(filename string) string {
-		return generateImgUrl("/images", name, filename)
-	}
-}
-
-func ImgThumbUrl(name string) func(string)string {
-	return func(filename string) string {
-		return generateImgUrl("/images", name, "thumbs/" + filename)
-	}
-}
-
-func generateImgUrl(prefix, name, filename string) string {
-	return prefix + "/" + name + "/" + filename
-}
-
 func ParseDate(date string) time.Time {
 	time, _ := time.Parse("2-1-2006", date);
 	return time
@@ -73,17 +57,8 @@ func NewPosts() Posts {
 		country := string(lines[2])
 		content := strings.Join(lines[4:len(lines)], "\n")
 
-		funcMap := template.FuncMap{
-			"img": ImgUrl(name),
-			"imgThumb": ImgThumbUrl(name),
-		}
-
-		for k,v := range HelpersFuncs(name) {
-			funcMap[k] = v
-		}
-
 		var buf bytes.Buffer
-		tmpl := template.Must(template.New("post").Funcs(funcMap).Parse(string(content)))
+		tmpl := template.Must(template.New("post").Funcs(HelpersFuncs(name)).Parse(string(content)))
 		err := tmpl.Execute(&buf, nil)
 		if err != nil {
 			panic(err)
