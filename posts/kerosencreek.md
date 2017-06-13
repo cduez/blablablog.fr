@@ -12,4 +12,10 @@ Nous nous posons ensuite au bord du Lac Taupo, le plus grand lac de NZ. L'eau y 
 
 {{ pictures "11" "Notre super-puissante, super-rapide, super-moderne, super-tout kiwi-mobile" }}
 
+<div class="center">
+{{ youtube "ew31d19FDoo" }}
+</div>
 
+<div class="center">
+{{ youtube "jVvPqiK0G9A" }}
+</div>
