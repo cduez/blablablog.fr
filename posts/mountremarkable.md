@@ -3,7 +3,7 @@ Mount Remarkable National Park
 au
 
 
-Etape de 6 jours dans le premier parc au sud de la chaîne de montagne Flinders Ranges. Le temps est mitigé (traduction: complètement pourri) et nous découvrons les joies du camping sous la pluie tout en se félicitant de ne pas être sous la tente : ) Le parc est habité par un grand nombre de *Laughing Kookaburras*, ces oiseaux surprenant dont le cri ressemble à des rires de singes (nous sommes fans!!!! mais les campers s'en plaignent car ils commencent à rire très tôt le matin : ). Nous sommes entourés de kangourous, wallibies et emus que nous pouvons observer à loisir, c'est le paradis : )
+Etape de 6 jours dans le premier parc au sud de la chaîne de montagne Flinders Ranges. Le temps est mitigé (traduction: complètement pourri) et nous découvrons les joies du camping sous la pluie tout en nous félicitant de ne pas être sous la tente : ) Le parc est habité par un grand nombre de *Laughing Kookaburras*, ces oiseaux surprenants dont le cri ressemble à des rires de singes (nous sommes fans!!!! mais les campeurs s'en plaignent car ils commencent à rire très tôt le matin : ). Nous sommes entourés de kangourous, wallibies et emus que nous pouvons observer à loisir; les odeurs d'eucalyptus et de toutes sortes d'herbes emplissent l'air; entre deux nuages, le ciel est étoilé et les rayons de lune éclairent la nuit, c'est le paradis : )
 
 {{ pictures "1,2,3" "Les laughing Kookaburra" }}
 
