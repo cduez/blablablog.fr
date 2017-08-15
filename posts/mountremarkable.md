@@ -7,11 +7,20 @@ Etape de 6 jours dans le premier parc au sud de la chaîne de montagne Flinders 
 
 {{ pictures "1,2,3" "Les laughing Kookaburra" }}
 
+<div class="center">
+  {{ youtube "FbbB2VpAUd8" }}
+</div>
+
 {{ pictures "9" "Notre emplacement de camping est situé à proximité d'une emu highway : )" }}
 
 Cyril a mis au point un systèmre extrêmement ingénieux pour protéger notre casserole des bourrasques de vent. En effet, les apprenti-campeurs que nous sommes réalisent rapidement qu'en cas de météo venteuse, le temps de cuisson est multiplié par 18 (et quand il pleut il faut plutôt passer au repas froid : ).
 
 {{ pictures "7" "Barrière cuisson anti-vent (brevet déposé)" }}
+
+<div class="center">
+  {{ youtube "neN9gFZGDUs" }}
+</div>
+
 
 Bien sûr, tous les campeurs australiens ont leur feu de camp, on nous invite même à venir nous réchauffer autour d'un feu, il va falloir que l'on s'y mette.
 
