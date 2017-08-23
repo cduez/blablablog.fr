@@ -11,7 +11,7 @@ C'est un peu "étrange" de se retrouver à plus de 100 kms de la route bithumée
 Les ballades qui partent du camping sont magnifiques. Elles nous font traverser de superbes gorges de roches rouges remplies de végétation et de vie animale (vivante et morte!). Nous avons la chance d'observer de nombreux "Yellow-footed Rock wallabies" (wallabies avec les membres jaunes et la queue tigrée) ainsi qu'un echidna qui fait le mort en nous voyant. Le premier jour, nous avons de beaux points de vue en hauteur en nous rendant à la "Monarch Mine". Chaque jour après avoir marché, nous nous rendons au Headquarter avec Cheapo pour prendre une douche; l'endroit est complètement déserté; nous n'y croisons jamais personne à part les émus et kangourous. Les nuits sont pleines d'étoiles, de lune rougeoyante et de pas de kangourous et autres bruits sauvages, comme ensorcellées.
 
 
-{{ pictures "1-35" "" }}
+{{ pictures "5-35" "" }}
 
 <div class="center">
   {{ youtube "aPBxqxm1oo4" }}
