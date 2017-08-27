@@ -28,7 +28,7 @@ Les caves d'Uluru ont longtemps été habitées par les Anangus et étaient orga
 
 {{ pictures "10-18" "Le tour d'Uluru avec un très joli mur de nuages" }}
 
-<div class=="center">
+<div class="center">
   {{ youtube "g04hIChveRc" }}
 </div>
 
