@@ -18,6 +18,6 @@ Près du Sunset Peak se trouvent quelques chalets en béton qui ont l'air abando
 
 {{ pictures "8-10,13" "Les chalets du Sunset Peak." }}
 
-Rencontre avec la *Nephila pilipes*, l'une des plus grandes araignées au monde, en début et en fin de ballade (mais non nous n'avons pas du tout envie de repartir en courant et de prendre le premier avion pour Paris Charles-de-Gaulle loool........;). Sa toile est capable d'arrêter un petit oiseau en plein vol !
+Rencontre avec la *Nephila pilipes*, l'une des plus grandes araignées au monde, en début et en fin de ballade (mais non nous n'avons pas du tout envie de repartir en courant et de prendre le premier avion pour Paris Charles-de-Gaulle loool........;). Sa toile est capable d'arrêter un petit oiseau en plein vol ! (Cyril était inquiet pour la toile mais je pense que ça ira..... : ).
 
 {{ pictures "2,18" "" }}
