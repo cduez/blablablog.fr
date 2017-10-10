@@ -12,7 +12,7 @@ Semaine de folie à New York en compagnie de mes parents que nous remercions de 
 {{ pictures "4,7,8" "Ellis Island, lieu d'accueil des migrants aux US de 1892 à 1954 (12 millions y sont passés). Le musée de l'immigration est à faire absolument!" }}
 
 
-{{ pictures "11,22" "Retrouvailles : )" }}
+{{ pictures "11,20" "Retrouvailles : )" }}
 
 {{ pictures "26" "Dad's birthday" }}
 
