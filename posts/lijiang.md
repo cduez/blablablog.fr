@@ -1,6 +1,6 @@
 Lijiang
 13-10-2017
-hk
+ch
 
 Arrivée à Kunming en milieu de soirée. Nuit mythique dans un hôtel situé dans l'aéroport. Nous sommes de loin les seuls typés occidentaux de l'endroit. Tout le monde nous dévisage franchement avec curiosité. Les choses se complexifient rapidement : nous tournons longuement dans l'aéroport sans trouver l'hôtel ni personne qui parle anglais pour nous diriger; au restaurant de l'aéroport, pas d'anglais sur le menu mais heureusement des photos; enfin, notre carte bleue ne semble fonctionner que de manière très aléatoire.
 
