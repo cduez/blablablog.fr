@@ -13,3 +13,5 @@ Le soir, diner et nuit dans une famille de Zhuangzi, village de minorité Pumi.
 {{ pictures "9-13,16" "La forêt de la montagne." }}
 
 {{ pictures "14,15,17" "Champignons." }}
+
+{{ pictures "18,19" "Chez notre hôtesse où l'on fait sécher les noix." }}
