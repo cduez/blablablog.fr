@@ -1,4 +1,4 @@
-De Baoshan aux Gorges du Saut du Tigre
+Baoshan aux Gorges du Saut du Tigre
 20-10-2017
 ch
 

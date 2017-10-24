@@ -1,4 +1,4 @@
-Des Gorges du Saut du Tigre à Shangri-La
+Gorges du Saut du Tigre à Shangri-La
 21-10-2017
 ch
 
