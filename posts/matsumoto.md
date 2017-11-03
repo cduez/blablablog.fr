@@ -6,7 +6,7 @@ Visite de Matsumoto, très jolie petite ville de province à quelques heures de 
 
 Dès que nous quittons Tokyo, les forêts s'enflamment de très belles couleurs d'automne.
 
-La ville abrite notamment l'un des plus vieux châteaux forts du Japon.
+La ville abrite notamment l'un des plus vieux châteaux forts du Japon, construit en 1504, que l'on prénomme 'Le Corbeau' en raison de ses couleurs sombres.
 
 Le soir, dinner dans un restaurant indien (le plus petit du Japon avec seulement 2 tables) où nous dégustons de très bons currys préparés par le gérant qui s'inspire de recettes familiales. Il nous propose de finir les casseroles car nous sommes les derniers clients et nous offre thé et friandises indiennes et japonnaises.
 
