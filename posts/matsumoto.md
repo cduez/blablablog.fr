@@ -12,7 +12,7 @@ Le soir, dinner dans un restaurant indien (le plus petit du Japon avec seulement
 
 {{ pictures "1-2" "Statues de l'un des temples de Matsumoto." }}
 
-{{ pictures "3,4,5,6,7,8,9" "Le château de Matsumoto." }}
+{{ pictures "3-5,8,9,11,12" "Le château de Matsumoto." }}
 
 {{ pictures "6" "Vue du Château." }}
 
