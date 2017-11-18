@@ -22,4 +22,6 @@ Le pélerinage représente quelques 1200 kilomètres de marche et est divisé en
 
 {{ pictures "4-30,32,33,37-44,46-51" "" }}
 
-{{ youtube "j39mi7dG-yA" }}
+<div class="center">
+  {{ youtube "j39mi7dG-yA" }}
+</div>
