@@ -4,7 +4,7 @@ jp
 
 Nous passons 2 nuits au Hondani Onsen-kan que nous rebaptisons très vite la grande maison du bonheur : )
 
-Cet établissement est un Onsen public qui propose également quelques chambres avec repas inclus. Nous observons avec émerveillement le fonctionement du Onsen. Les clients y passent beaucoup de temps, seuls ou en famille, d'abord pour profiter des bains de la source chaude, mais aussi pour se reposer, travailler, regarder la télévision, lire le journal, se faire masser, acheter une boisson lactée fraîche au distributeur, prendre un repas au restaurant.... Tout le monde est souriant, décontracté et surtout aussi à l'aise que dans sa propre maison. Le temps semble s'être arrêté, tout le monde est chez soi : )
+Cet établissement est un [Onsen](https://fr.wikipedia.org/wiki/Onsen) public qui propose également quelques chambres avec repas inclus. Nous observons avec émerveillement le fonctionement du Onsen. Les clients y passent beaucoup de temps, seuls ou en famille, d'abord pour profiter des bains de la source chaude, mais aussi pour se reposer, travailler, regarder la télévision, lire le journal, se faire masser, acheter une boisson lactée fraîche au distributeur, prendre un repas au restaurant.... Tout le monde est souriant, décontracté et surtout aussi à l'aise que dans sa propre maison. Le temps semble s'être arrêté, tout le monde est chez soi : )
 
 Quant aux personnes qui travaillent au Onsen, elles sont beaucoup plus directes dans leur façon de communiquer que ce que nous avons pu expérimenter en ville ou dans certains établissements 'occidentalisés'. Ici, la traditionnelle réserve japonaise n'est plus de mise : ) Et surtout, elles adooooooooooooorent prendre des photos!!!!!!!!!!!!!!!!!! (voir shooting ci-dessous : )
 
