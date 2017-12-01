@@ -15,6 +15,6 @@ Le dernier Temple de la journée nous permet d'admirer les très expressives 500
 
 {{ pictures "57,56,55,54,50,49,48,47" "Les Arhats." }}
 
+{{ pictures "60" "Pause-déjeuner Udon our favorite!!!!!!!!!!!!!!!" }}
+
 {{ pictures "1-7,9-23,25-27,29-30,32-46,51-53,58,59" "" }}
-
-
