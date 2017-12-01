@@ -16,7 +16,7 @@ Quant aux personnes qui travaillent au Onsen, elles sont beaucoup plus directes 
 
 {{ pictures "11-13" "Finalement, nous changeons de côté pour la lumière, et là, surprise, nous nous retrouvons avec une peluche dans les mains, gros fou-rire pour moi, j'ai vraiment beaucoup de mal à m'arrêter de rire.............." }}
 
-{{ pictures "5" "Nous apprendrons plus tard que cette jolie peluche est en fait la mascotte de la préfecture d'Ehime et tous les habitants en sont très fiers..... voilà pourquoi la serveuse a insisté pour que nous la prenions avec nous sur la photo : )" }}
+{{ pictures "5" "Nous apprendrons plus tard que cette jolie peluche est en fait la mascotte de la préfecture d'Ehime dont tous les habitants sont très fiers..... voilà pourquoi la serveuse a insisté pour que nous la prenions avec nous sur la photo : )" }}
 
 **SHOOTING PHOTOS - DEUXIEME (Kiko - dîner)**
 
@@ -24,4 +24,4 @@ Quant aux personnes qui travaillent au Onsen, elles sont beaucoup plus directes 
 
 **SHOOTING PHOTOS - TROISIEME (la serveuse du restaurant - petit-déjeuner)**
 
-{{ pictures "6" "Alors que nous pensions sortir discrètement et échapper à une nouvelle séance photo, on nous rattrape à la sortie du Onsen pour un autre mitraillage.... ah, pas toujours facile la vie de star : )" }}
+{{ pictures "6" "Alors que nous pensions sortir discrètement et échapper à une nouvelle séance photos, on nous rattrape à la sortie du Onsen pour un autre mitraillage.... ah, pas toujours facile la vie de star : )" }}
