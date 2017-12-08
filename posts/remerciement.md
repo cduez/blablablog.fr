@@ -10,7 +10,8 @@ Aujourd'hui, nous sommes très fiers d'avoir été ensemble au bout de ce projet
 
 Pour le mot de la fin, nous souhaitons remercier très chaleureusement toutes les personnes, famille et amis, qui nous ont soutenus dans ce projet de manières très diverses, ainsi que toutes les personnes qui ont croisé notre chemin et qui ont contribué à faire de ce voyage une année d'immense joie : )
 
-{{ pictures "1-6,8,9,11,10,7" "" }}
+{{ pictures "1-6,8,9,11,12,10,7" "" }}
+
 
 <div class="center">
   {{ youtube "9RB9FFtvkEc" }}
