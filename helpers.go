@@ -16,7 +16,7 @@ func HelpersFuncs(name string) template.FuncMap {
 }
 
 func Youtube(videoId string) template.HTML {
-	var output bytes.Buffer
+  var output bytes.Buffer
 	tmpl := template.Must(template.New("youtube").ParseFiles("public/helpers/youtube.tmpl"))
 
 	err := tmpl.Execute(&output, struct{ Id string }{videoId})
@@ -44,9 +44,6 @@ func Picture(name string) func(string) template.HTML {
 
 		return template.HTML(output.String())
 	}
-}
-
-func AddPictureByRange(buffer *template.HTML, name string, first int, last int) {
 }
 
 func Pictures(name string) func(string, string) template.HTML {
