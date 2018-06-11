@@ -133,23 +133,23 @@ figure {
   bottom: 0;
   right: 0;
   left: 0;
-	background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
 
 .ml_box img {
-	max-width: 90%;
-	max-height: 90%;
-	vertical-align: middle;
-	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	cursor: zoom-out;
-	cursor: -webkit-zoom-out;
-	border-radius: 4px;
+  max-width: 90%;
+  max-height: 90%;
+  vertical-align: middle;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: zoom-out;
+  cursor: -webkit-zoom-out;
+  border-radius: 4px;
 }
 
 #map {
