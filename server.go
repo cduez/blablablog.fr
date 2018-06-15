@@ -115,11 +115,44 @@ func ViewMap(c echo.Context) error {
 	return c.Render(http.StatusOK, "map", data)
 }
 
+func checkPictures() {
+	posts := NewPosts()
+
+	for _, post := range posts {
+		pathToThumbs := "./assets/images/" + post.Name + "/thumbs"
+		if _, err := os.Stat(pathToThumbs); os.IsNotExist(err) {
+			continue
+		}
+
+		files, err := ioutil.ReadDir(pathToThumbs)
+		if err != nil {
+			panic(err)
+		}
+
+		numberOfFiles := len(files)
+		numberOfPictures := len(post.Pictures)
+		if numberOfFiles != numberOfPictures {
+			fmt.Printf("[%s] is missing some pictures used:%d expected:%d\n", post.Name, numberOfPictures, numberOfFiles)
+		}
+
+		expected := 1
+		for index, pic := range post.Pictures {
+			if pic != expected {
+				fmt.Printf("[%s] got wrong index:%d expected:%d\n", post.Name, pic, index+1)
+				expected = pic
+			}
+			expected += 1
+		}
+	}
+}
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
 		panic(err)
 	}
+
+	checkPictures()
 
 	e := echo.New()
 	e.ShutdownTimeout = 3

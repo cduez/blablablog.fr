@@ -6,4 +6,4 @@ Le parc a été nommé d'après une légende Chippewa qui raconte qu'une ours et
 
 Sur une note plus gaie, nous avons pleinement profité de nos deux jours dans le parc avec de belles ballades en forêt et bien sûr l'ascension de la fameuse *Sleeping Bear Dune*. Les rives du lac sont de très belles falaises de sable. Au coucher du soleil, les plaines et les forêts se remplissent de *white tailed deer*. Cyril a repéré une énorme chouette que nous avons pu observer à la jumelle. En cette saison, nous avons eu le parc pour nous tous seuls et avons presque été les seuls clients de l'auberge du petit village d'Empire : ) Le paradis : )
 
-{{ pictures "1-19" "" }}
+{{ pictures "1-20" "" }}

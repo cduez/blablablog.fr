@@ -14,12 +14,13 @@ import (
 )
 
 type Post struct {
-	Slug    string
-	Name    string
-	Title   string
-	Date    time.Time
-	Country string // ISO 3166
-	Content template.HTML
+	Slug     string
+	Name     string
+	Title    string
+	Date     time.Time
+	Country  string // ISO 3166
+	Content  template.HTML
+	Pictures []int
 }
 
 type Posts []Post
@@ -56,17 +57,19 @@ func NewPosts() Posts {
 		date := ParseDate(string(lines[1]))
 		country := string(lines[2])
 		content := strings.Join(lines[4:len(lines)], "\n")
+		var pictures []int
 
 		var buf bytes.Buffer
-		tmpl := template.Must(template.New("post").Funcs(HelpersFuncs(name)).Parse(string(content)))
+		tmpl := template.Must(template.New("post").Funcs(HelpersFuncs(name, &pictures)).Parse(string(content)))
 		err := tmpl.Execute(&buf, nil)
 		if err != nil {
 			panic(err)
 		}
+		sort.Ints(pictures)
 
 		htmlContent := template.HTML(string(blackfriday.MarkdownCommon(buf.Bytes())))
 
-		posts = append(posts, Post{slug, name, title, date, country, htmlContent})
+		posts = append(posts, Post{slug, name, title, date, country, htmlContent, pictures})
 	}
 
 	sort.Sort(posts)

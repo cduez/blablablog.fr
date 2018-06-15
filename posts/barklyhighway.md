@@ -17,6 +17,8 @@ Pour pouvoir prendre une douche et faire le plein, notre seule option à plusieu
 
 Ca y est nous sommes dans le Queensland! Visite du *Camooweal Caves National Park* dans l'après-midi avant de rejoindre le camping du soir.
 
+{{ pictures "7-9" "" }}
+
 {{ pictures "6" "Et voilà pourquoi 'dirty' road" }}
 
 Le parc abrite notamment un important point d'eau où vient se rafraichir et se nourrir toute la faune locale. Nous avons la chance d'y admirer 3 espèces de hérons, ce qui est assez émouvant dans cette fournaise de poussière rouge (on les imagine plus aisément dans la verdure des *Everglades* ou en Normandie : ). Ici, la phrase "l'eau c'est la vie" prend tout son sens.

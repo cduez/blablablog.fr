@@ -24,4 +24,6 @@ Voici le compte-rendu de nos deux explorations dans le *Sequoia National Park* o
 
 {{ pictures "15" "Le General Sherman Tree, ou le Sherman pour les intimes, est l'arbre le plus large du monde avec ses 31 mètres de diamètre. Dans sa catégorie, c'est un jeunot de 2200 ans. En effet, certains autres séquoias de la Forêt sont beaucoup plus âgés mais néanmoins moins larges." }}
 
+{{ pictures "29" "" }}
+
 {{ pictures "1-5,8-13,16,17,20,28,30,34,36,41" "Essayer de s'imaginer toutes les époques que ces Géants Majestueux ont traversé donne le vertige! Ils constituent un patrimoine exceptionnel qu'il faut tout faire pour préserver!" }}

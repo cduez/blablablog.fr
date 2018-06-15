@@ -34,4 +34,4 @@ Le deuxième jour, nous avons pédalé jusqu'à la tour d'observation de Shark V
 
 Pour ce dernier jour aux Everglades, nous embarquons sur un petit bateau à moteur pour aller découvrir les *ten thousand islands* qui sont principalement constituées de mangroves et de boue mais également très riches en vie sauvage. Le retour en voiture se fait via la *Big Cypress National Preserve* qui héberge notamment la panthère de Floride en voie de disparition (le premier panneau de signalisation "panther crossing" est toujours un peu surprenant...).
 
-{{ pictures "33-39" "" }}
+{{ pictures "33-40" "" }}

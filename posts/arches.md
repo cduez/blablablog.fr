@@ -6,4 +6,4 @@ Dans le parc, nous empruntons le sentier du *Devils Garden* qui nous permet d'ob
 
 Ce sentier, qui passe dans un dédale de roches rouges et offre une vue dégagée sur les sommets enneigés de l'Utah, est de loin le préféré de Laure depuis notre départ.
 
-{{ pictures "1-15" "" }}
+{{ pictures "1-25" "" }}

@@ -7,16 +7,16 @@ import (
 	"strings"
 )
 
-func HelpersFuncs(name string) template.FuncMap {
+func HelpersFuncs(name string, usedPictures *[]int) template.FuncMap {
 	return template.FuncMap{
 		"youtube":  Youtube,
 		"picture":  Picture(name),
-		"pictures": Pictures(name),
+		"pictures": Pictures(name, usedPictures),
 	}
 }
 
 func Youtube(videoId string) template.HTML {
-  var output bytes.Buffer
+	var output bytes.Buffer
 	tmpl := template.Must(template.New("youtube").ParseFiles("public/helpers/youtube.tmpl"))
 
 	err := tmpl.Execute(&output, struct{ Id string }{videoId})
@@ -46,7 +46,7 @@ func Picture(name string) func(string) template.HTML {
 	}
 }
 
-func Pictures(name string) func(string, string) template.HTML {
+func Pictures(name string, pictures *[]int) func(string, string) template.HTML {
 	// "1-15,6,23-24" "caption"
 	return func(groups, caption string) template.HTML {
 		var buffer template.HTML = "<figure>"
@@ -65,6 +65,7 @@ func Pictures(name string) func(string, string) template.HTML {
 			}
 
 			for i := first; i <= last; i++ {
+				*pictures = append(*pictures, i)
 				buffer += Picture(name)(strconv.Itoa(i))
 			}
 		}
